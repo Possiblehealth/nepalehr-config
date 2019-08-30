@@ -37,7 +37,7 @@ T1.person_id = T2.person_id) DeliveryDetails
 GROUP BY DeliveryDetails.TypeofDelivery
 -- ----------------------------------------------
 UNION ALL SELECT 'Caesarean Section',0,0,0
-UNION ALL SELECT 'Forceps or Vaccum Extracted Delivery',0,0,0
+UNION ALL SELECT 'Vacuum or forcep assisted',0,0,0
 UNION ALL SELECT 'Spontaneous Vaginal Delivery',0,0,0) final
 GROUP BY final.TypeofDelivery
 ORDER BY final.TypeofDelivery;
